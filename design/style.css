@@ -1,0 +1,202 @@
+/* ==================================================================================================== */
+/* setting items in the body of html in the center of the page */
+body{
+    font-family:'Fraunces','Montserrat', sans-serif;
+   font-weight: 500 700;
+    background-color:hsl(30, 38%, 92%);
+    display:grid;
+    place-items: center;
+    min-height: 100vh;
+    padding:1rem;
+
+}
+/* ==================================================================================================== */
+
+
+
+/* ==================================================================================================== */
+/* Paragraph setting in the text-column */
+p{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-top:0;
+    line-height: 1.8;
+    color: hsla(228, 12%, 48%, 0.8);
+}
+
+/* ==================================================================================================== */
+/* heading One settings in the text-column */
+h1{
+
+    font-size:2.5rem;
+    color: hsla(212, 21%, 14%);
+    margin-right: 2.5rem;
+    margin-top: 0;
+    line-height: 1;
+}
+
+/* ==================================================================================================== */
+/* Main container which includes everything with white background shown */
+
+.main-container{
+    display:grid;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    overflow: hidden;     
+ }
+
+/* ====================================================================================================== */
+
+/* =============================Media queries start===================================================== */
+
+/* Media query to show mobile picture the screen size is smaller */
+
+@media(max-width:37.5rem){
+   
+   .main-container{
+    max-width: 100vw;
+   }
+   
+    .mobile-image{
+        width:100%;
+        display: block;
+        visibility:visible;
+    
+    }
+    .text-column{
+
+    margin-left:2rem;
+
+    }
+
+    .title-heading{
+        margin-bottom:0;
+    }
+
+    .btn-svg{
+        margin-bottom:2rem;
+        padding: 0 20px 0 0;
+    }
+
+}
+
+/* Media query to show desktop size picture when the screen size is bigger */
+
+@media (min-width:37.5rem)
+
+{
+    .main-container{
+    max-width: 45rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    overflow: hidden;
+    gap:2rem;
+}
+.desktop-image{
+    max-width: 100%;
+    display: block;
+    visibility:visible;
+}
+}
+/* =============================Media queries end===================================================== */
+
+
+
+/* =============================================================================================================== */
+/* Setting of text in the text-column section */
+
+.text-column{
+
+    display:flex;
+    flex-direction: column;
+    margin-top:2rem;
+    justify-content: center;
+
+}
+
+/* Setting of title perfume text */
+
+.title-perfume{
+
+    letter-spacing: 0.25rem;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: hsla(228, 12%, 48%, .6);
+}
+
+/* setting of title heading shown just after the perfume text */
+
+.title-heading{
+    height:11.875rem;
+}
+
+/* ========================================================================================================= */
+/* Setting of paragraph shown in the text-column */
+
+
+.middle-para{
+margin-right:6.25rem;
+}
+
+
+/* ======================================================================================================== */
+/* Setting of pricing section as shown price in the text-column */
+
+.pricing-section .span-2{
+    font-family: 'Montserrat';
+    font-size:1rem;
+    font-weight: 500;
+    margin-left:2rem;
+    text-decoration:line-through;
+    color: hsla(228, 12%, 48%, .6);
+    position:absolute;
+    margin-top:0.625rem;
+}
+ 
+.pricing-section .span-1{
+
+    color: hsl(158, 36%, 37%);
+    font-weight:700;
+    font-size:2rem;
+}
+
+/* ================================================================================================= */
+/* Adding button and its styling */
+
+.btn-svg{
+    display:block;
+    margin-top:2rem;
+}
+
+.btn{
+    width:18rem;
+    background:hsla(158, 36%, 37%);
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    color: #ffffff;
+    font-size: 1rem;
+    padding: 16px 20px 16px 20px;
+    text-decoration: none;
+  }
+
+  .btn:hover{
+     background:  hsl(154, 33%, 25%);   
+     background:linear-gradient(to top,  hsl(154, 33%, 25%));
+     background:linear-gradient(to bottom,   hsl(154, 33%, 25%));
+     background:linear-gradient(to left,   hsl(154, 33%, 25%));
+     background:linear-gradient(to right,   hsl(154, 33%, 25%));
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+
+/* setting SVG icon distance from the text in the button */
+  .btn svg{
+    padding-right: 10px;
+  }
+
+/* =====================================THE END============================================================= */
